@@ -14,10 +14,9 @@ function NavBar() {
         <>
             <Navbar bg="light" expand="lg" fixed="top">
                 <Container className='container-fluid' style={{ height: 100 }}>
-                    <Navbar.Brand href="#home">Balanced Nature</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto" style={{ justifyContent: 'space-between' }}>
+                        <Nav className="me-auto" style={{ justifyContent: 'center' }}>
                             <Nav.Link href="#home">Desconto verde</Nav.Link>
                             <Nav.Link href="#home">Alimentos</Nav.Link>
                             <Nav.Link href="#home">Bebidas</Nav.Link>
