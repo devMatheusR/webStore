@@ -1,7 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Button, Form } from 'react-bootstrap';
 
 
@@ -31,13 +30,14 @@ function NavBar() {
                                 placeholder="Search"
                                 className="me-2"
                                 aria-label="Search"
-                            /></Form>
+                            />
+                        </Form>
 
                         <Button variant="secondary" size="sm">
                             Login
                         </Button>
                         <Button variant="secondary" size="sm">
-                            Registro
+                            Registrar
                         </Button>
                     </Nav>
                 </Container>
