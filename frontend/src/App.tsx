@@ -1,12 +1,11 @@
-import NavBar from "./components/NavBar";
-import theme from "./styles/theme";
+import CollapsibleExample from "./components/NavBar";
 
 function App() {
 
   return (
     <>
       <div className="container-Navbar">
-        <NavBar />
+        <CollapsibleExample />
       </div>
     </>
 
