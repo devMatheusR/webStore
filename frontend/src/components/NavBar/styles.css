@@ -1,4 +1,27 @@
-.navbar-main {
-    background-color: '#C9F2C7';
+.nav-main {
+    background-color: rgb(201, 242, 199);
+    color: rgb(36, 49, 25);
 }
 
+.navbar-toggler {
+    background-image: none;
+    line-height: 0;
+}
+
+.nav-title {
+    font-weight: 500;
+    font-size: 26px;
+    padding: 1vh;
+    margin-left: 2vh;
+}
+
+.ms-auto {
+    padding: 1vh;
+    margin-right: 2vh;
+}
+
+.nav-divider{
+    margin: 0 5 0 5;
+    line-height: 10px;
+
+}

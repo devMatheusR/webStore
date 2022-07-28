@@ -1,33 +1,42 @@
 import * as React from 'react';
-
-import { Container, Nav, NavDropdown } from 'react-bootstrap';
+import { Container, Nav } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar'
-import NavbarCollapse from 'react-bootstrap/NavbarCollapse';
-import { Stack, Button, Divider, TextField, Box, Icon } from '@mui/material'
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-
-
+import SearchAppBar from '../SearchAppBar';
+import { Button, Stack } from '@mui/material';
 
 import theme from '../../styles/theme';
-import './styles.css'
+import './styles.css';
+import '../../assets/fonts/fonts.css';
+
 
 function NavBar() {
     return (
-        <Navbar className='navbar-main' collapseOnSelect expand="lg" bg='dark'>
-            <Container>
-                <Navbar.Brand>Balanced Nature</Navbar.Brand>
+        <Navbar className='nav-main' expand="sm" fixed='top' >
+            <Container fluid>
+                <p className='nav-title'>Balanced Nature</p>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav>
-                    <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
-                        <SearchOutlinedIcon sx={{ color: 'action.active',  mr: 1, my: 0.5}}/>
-                        <TextField id="input-with-sx" variant="standard" sx={{ color: 'white'}}/>
 
-                        <Divider orientation="vertical" flexItem style={{ width: 1 }} />
-                        <Button variant='text'>Entrar</Button>
-                        <Button variant='contained'>Registro</Button>
-                    </Box>
+                    <Nav className='ms-auto'>
+                        <SearchAppBar />
+                        <Stack spacing={2} direction="row">
+                            <Button sx={{
+                                fontSize: 14,
+                                fontWeight: 500,
+                                color: theme.textPrimary
+                            }} variant="text">Login</Button>
+
+                            <Button sx={{
+                                fontSize: 14,
+                                fontWeight: 500,
+                                borderRadius: 5,
+                                backgroundColor: '#FFFF',
+                                color: theme.textPrimary
+                            }} variant="contained">Registro</Button>
+
+                        </Stack>
                     </Nav>
+
                 </Navbar.Collapse>
             </Container>
         </Navbar>
